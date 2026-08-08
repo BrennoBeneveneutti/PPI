@@ -1,69 +1,106 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
+    background: linear-gradient(144deg, #f30909 50%, rgb(243, 243, 243) 50%, rgb(243, 243, 243) 51%, #eff309 51%);
   font-family: 'Poppins', sans-serif;
   margin: 0;
   min-height: 100vh;
 }
 
-.posto{
-    color: rgb(239, 243, 9);
+.posto {
+    background: linear-gradient(144deg, #f30909 65%, rgb(243, 243, 243) 65%, rgb(243, 243, 243) 75%, #eff309 75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 1.5px black;
+    font-weight: bold;
     -webkit-text-stroke: 1.5px black;
 }
-.shell{
+
+.shell {
     color: rgb(243, 9, 9);
     -webkit-text-stroke: 1.5px black;
 }
 
-div.pai{
+div.pai {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-img{
+
+img {
     padding: 0px;
     margin: 0px;
     width: 70px;
     height: 70px;
 }
+
 h2.um {
     padding: 15px;
-    margin: 10px;
-    margin-left: 60px;
+    margin: 0px 0px 0px 60px;
     background-color: transparent;
     color: black;
 }
-div.titulo{
+
+h2.trabalhe {
+    padding: 15px;
+    margin: 0px 0px 0px 80px;
+    background-color: transparent;
+}
+
+h2.trabalhe a {
+    color: black;
+    text-decoration: none;
+}
+
+div.titulo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 35px;
     margin-top: 160px;
-}
-.texto{
-    position: relative;
-  width: 100%;
-  height: auto;
     
 }
-h2.dois{
+h1{
+    color: rgb(248, 247, 247);
+}
+
+.texto {
+    color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+h2.dois {
     font-size: 28px;
     position: absolute;
-  top: 50px;
-  right: 1070px;
-  left: 24px;
-  margin: 0;
+    top: 50px;
+    right: 1070px;
+    left: 24px;
+    margin: 0;
 }
-div.texto.imgdois{
-  
-   display: flex;
+
+div.texto.imgdois {
+    display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    
 }
-img.dois{
+
+img.dois {
     margin-left: 1130px;
     margin-top: 50px;
     width: 626px;
@@ -72,32 +109,38 @@ img.dois{
     border: 3px solid black;
     border-radius: 16px;
 }
-a{
+
+
+.btn-amarelo {
     text-decoration: none;
     display: inline-block;
-    background-color: rgb(239, 243, 9);
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 2.5px rgba(0, 0, 0, 0.308);
     padding: 10px 20px;
-     margin-top: 150px;
-     margin-block-end: 70px;
+    margin-top: 150px;
+    margin-block-end: 70px;
     margin-left: 800px;
     margin-right: 800px;
     border-radius: 16px;
     color: rgb(243, 9, 9);
     font-weight: bold;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-a:hover{
+
+.btn-amarelo:hover {
     background-color: rgb(243, 9, 9);
     color: rgb(239, 243, 9);
     transition: 0.5s;
     transform: scale(1.1);
 }
 
-div.botao{
+div.botao {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    scroll-margin-top: 120px; /* Margem para o topo fixo não tampar o botão */
 }
