@@ -58,3 +58,28 @@ let carnes = ["Frango", "Carne de porco", "Carne de boi", "Peixer"];
 carnes.forEach( (v1) => {
     console.log(v1);
 } );
+
+
+b=2.0;
+a="2";
+
+if(b==a){
+    console.log("igual");
+}
+
+if(!(b===a)){
+    console.log("diferente");
+}
+
+nome="Joao Henrrique Marcelo Boos";
+nome2="Xhakinha";
+
+let nomes=nome.split(" ").reverse().join(" ");
+console.log(nomes);
+
+let nomes2=nome2.split("").reverse().join("");
+console.log(nomes2);
+
+console.log(carnes.length.filter((v1) => {
+    return v1.length>5;
+}  

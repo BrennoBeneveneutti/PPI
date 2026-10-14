@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador Aleatório</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Gerador de número</h1>
+
+        <div class="campo">
+            <span>Mínimo: 0</span>
+        </div>
+
+        <div class="campo">
+            <span>Máximo: 100</span>
+        </div>
+
+        <button id="gerar" type="button">Gerar número</button>
+
+        <div class="resultado-box">
+            <label for="resultado">Resultado</label>
+            <input type="text" id="resultado" readonly placeholder="0 a 100">
+        </div>
+
+        <div class="contador-box">
+            <span>Cliques:</span>
+            <strong id="contador">0</strong>
+        </div>
+
+        <div class="bonus-box">
+            <span>Bônus:</span>
+            <strong id="bonus-score">0</strong>
+        </div>
+    </main>
+
+    <button id="bonus-button" class="bonus-button" type="button">+10</button>
+    <div id="plus-float" aria-live="polite">+1</div>
+
+    <script src="js.js"></script>
+</body>
+</html>
